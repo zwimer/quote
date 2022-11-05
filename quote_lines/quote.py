@@ -23,8 +23,9 @@ def quote(skip_empty: bool, newline: bool, keep_trailing_newline: bool) -> None:
 
 
 def parse_args(program: str, *args: str) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(prog=os.path.basename(program))
-    parser.add_argument("--version", action="version", version=f"{program} {__version__}")
+    base: str = os.path.basename(program)
+    parser = argparse.ArgumentParser(prog=base)
+    parser.add_argument("--version", action="version", version=f"{base} {__version__}")
     parser.add_argument("-n", "--newline", action="store_true", default=False,
         help="Output arguments with newline instead of a space as a delimiter")
     parser.add_argument("--skip-empty", action="store_true", default=False,
