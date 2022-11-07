@@ -4,7 +4,8 @@ import shlex
 import sys
 import os
 
-from . import __version__
+
+__version__ = "1.0.2"
 
 
 def quote(skip_empty: bool, newline: bool, keep_trailing_newline: bool) -> None:
