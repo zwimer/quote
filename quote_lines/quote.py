@@ -5,7 +5,7 @@ import sys
 import os
 
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 
 def quote(skip_empty: bool, newline: bool, keep_trailing_newline: bool) -> None:
