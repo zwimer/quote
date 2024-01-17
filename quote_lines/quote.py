@@ -1,11 +1,10 @@
-from __future__ import annotations
 import argparse
 import shlex
 import sys
 import os
 
 
-__version__ = "1.1.0"
+__version__ = "1.1.2"
 
 
 def quote(skip_empty: bool, newline: bool, keep_trailing_newline: bool) -> None:

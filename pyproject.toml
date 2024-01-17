@@ -6,12 +6,12 @@ build-backend = "setuptools.build_meta"
 name = "quote_lines"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.10",
 ]
 license = {text = "GPL"}
 description = "A tiny CLI used for quoting input lines"
 urls = {Homepage = "https://github.com/zwimer/quote"}
-requires-python = ">= 3.8"
+requires-python = ">= 3.10"
 dynamic = ["version"]
 
 [project.readme]
@@ -38,7 +38,7 @@ version = {attr = "quote_lines.__version__"}
 
 [tool.black]
 line-length = 120
-target-version = ["py38"]
+target-version = ["py310"]
 
 [tool.ruff]
 ignore=["E731"]
