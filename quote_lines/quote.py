@@ -4,12 +4,14 @@ import sys
 import os
 
 
-__version__ = "1.1.2"
+__version__ = "1.2.0"
 
 
 def quote(skip_empty: bool, newline: bool, keep_trailing_newline: bool) -> None:
     # Read in stdin
     data: str = "".join(line for line in sys.stdin)
+    if not data:
+        return
     if not keep_trailing_newline and data.endswith("\n"):
         data = data[:-1]
     # Quote lines
