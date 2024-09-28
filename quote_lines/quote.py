@@ -3,15 +3,15 @@ import shlex
 import sys
 
 
-__version__ = "1.3.0"
+__version__ = "1.3.1"
 
 
-def quote(skip_empty: bool, newline: bool, keep_trailing_newline: bool) -> None:
+def quote(skip_empty: bool, newline: bool, keep_newline: bool) -> None:
     # Read in stdin
     data: str = "".join(line for line in sys.stdin)
     if not data:
         return
-    if not keep_trailing_newline and data.endswith("\n"):
+    if not keep_newline and data.endswith("\n"):
         data = data[:-1]
     # Quote lines
     items: list[str] = data.split("\n")
