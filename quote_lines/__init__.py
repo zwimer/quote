@@ -1,1 +1,1 @@
-from .quote import cli, __version__
+from .quote import __version__, cli
