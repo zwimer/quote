@@ -36,6 +36,9 @@ version = {attr = "quote_lines.__version__"}
 
 # Tools
 
+[tool.pylint.main]
+jobs = 0
+
 [tool.black]
 line-length = 120
 target-version = ["py310", "py311", "py312"]
