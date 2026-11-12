@@ -2,7 +2,7 @@ import argparse
 import shlex
 import sys
 
-__version__ = "1.4.0"
+__version__ = "1.4.1"
 
 
 def quote(skip_empty: bool, newline: bool, keep_newline: bool) -> None:
